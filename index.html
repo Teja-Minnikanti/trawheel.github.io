@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraWheel</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      main {
+        position: relative;
+        height: 90vh;
+      }
+      .backgroundForHome {
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 1%;
+      }
+
+      .mainHeading {
+        height: 70vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: right;
+        padding-right: 30px;
+      }
+
+      .mainHeading h1 {
+        text-align: right;
+        color: #464545;
+        font-family: 'Cardo', serif;
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: 5px;
+      }
+
+      .mainHeading button {
+        border: none;
+        padding: 15px 30px;
+        border-radius: 40px;
+        font-family: 'Cardo', serif;
+        font-weight: 700;
+        font-size: 22px;
+        box-shadow: 5px 5px 10px -8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        color: #464545;
+        margin-top: 10px;
+        outline: none;
+      }
+
+      .mainHeading button:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo-link"><h1>TraWheel</h1></a>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" id="nav-item-active">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a href="register.html"><button>Register</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img src="source/bg-01-02.png" alt="" class="backgroundForHome" />
+      <section class="mainHeading">
+        <div>
+          <h1>
+            ONE TICKET TO TRAVEL
+            <br />
+            WHOLE WORLD
+          </h1>
+          <a href="register.html"><button>Book Now</button></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

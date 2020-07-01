@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TraWheel-Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .grid-div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 90vh;
+        justify-items: center;
+        align-content: center;
+      }
+
+      .contact-div {
+        height: 500px;
+        width: 450px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .form-div {
+        padding-bottom: 50px;
+      }
+
+      .form-div form {
+        transform: scale(1.1);
+      }
+
+      .form-div h1 {
+        font-family: 'Cardo', serif;
+        font-size: 40px;
+        color: #464545;
+        margin-bottom: 5px;
+      }
+
+      .form-div form label {
+        font-family: 'Cardo', serif;
+        font-size: 20px;
+        color: #464545;
+      }
+
+      .form-div hr {
+        height: 1px;
+        width: 260px;
+        margin-bottom: 50px;
+        outline: none;
+        background-color: black;
+        border: none;
+      }
+
+      .form-input {
+        border: none;
+        background-color: #e4e3e3;
+        width: 250px;
+        height: 30px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        padding-left: 10px;
+        outline: none;
+      }
+
+      .submit-btn {
+        border: none;
+        background-color: #7e7d7d;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        outline: none;
+      }
+
+      .submit-btn:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-link"><h1>TraWheel</h1></a>
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="#" id="nav-item-active">Contact</a></li>
+          <li class="nav-item">
+            <a href="register.html"><button>Register</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-div">
+        <div class="img-div">
+          <img src="Source/bg-04.png" alt="" width="100%" />
+        </div>
+        <div class="contact-div">
+          <div class="form-div">
+            <h1>Contact Form</h1>
+            <hr />
+            <form action="thankYou.html">
+              <label for="fullName">Full Name</label>
+              <br />
+              <input type="text" class="form-input" name="fullName" />
+              <br />
+              <label for="password">Password</label>
+              <br />
+              <input type="password" class="form-input" name="password" />
+              <br />
+              <label for="phoneNumber">Phone Number</label>
+              <br />
+              <input type="text" name="phonenumber" class="form-input" />
+              <br />
+              <button type="submit" value="Submit" class="submit-btn">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
